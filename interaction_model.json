@@ -1,0 +1,122 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my expenses",
+            "intents": [
+                {
+                    "name": "AddExpense",
+                    "slots": [
+                        {
+                            "name": "Amount",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Category",
+                            "type": "CATEGORIES"
+                        }
+                    ],
+                    "samples": [
+                        "I paid {Amount} for {Category}",
+                        "Add {Amount} for {Category}",
+                        "{Amount} for {Category}",
+                        "paid {Amount} for {Category}",
+                        "for {Category} paid {Amount}",
+                        "{Amount} paid for {Category}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "CATEGORIES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Dining out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Groceries"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fuel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Car"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Traveling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Loan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Internet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Telephone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Credit Card "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Other"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
